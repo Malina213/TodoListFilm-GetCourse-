@@ -1,0 +1,125 @@
+.movie{
+    &__inner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 45px;
+        min-height:  100vh;
+    }
+
+    &__top{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-left: 74px;
+
+    }
+    &__tegs-film{
+        padding: 10px 23.5px;
+    }
+    &__tegs-year{
+        padding: 10px 21.5px;
+        margin-left: -5px;
+    }
+    &__title{
+        font-size: 120px;
+        font-weight: 400;
+        line-height: 138px;
+        max-width: 660px;
+        
+    }
+    &__content{
+        width: 100%;
+        border-radius: 20px;
+        background-color: var(--bg-content);
+        padding: 60px 70px;
+    }
+    &__search{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+    }
+    &__search-input{
+        width: 411px;
+        padding-left: 4px;
+        border-bottom: 1px solid var(--text-opacity);
+    }
+    &__search-button{
+        width: 62px;
+        height: 62px;
+        border-radius: 100%;
+        background-color: var(--bg-tegs);
+        padding: 15px 15px;
+        transition: all 0.3s ease-out;
+        &:hover{
+            background-color: var(--bg-check-active);
+            border: 1px solid var(--color-white);
+        }
+    }
+    &__list{
+        margin-top: 40.5px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3px;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        background-color: var(--bg-item);
+        padding: 24px 20px;
+    }
+    &__item-check{
+        border: 1px solid var(--text-opacity);
+        border-radius: 100px;
+        width: 19px;
+        height: 18px;
+        margin-right: 20px;
+    }
+    &__item-film{
+        flex: auto;
+        color: var(--text);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+    }
+    &__item-delete{
+        width: 23px;
+        height: 23px;
+        img{
+            pointer-events: none;
+            fill: red;
+        }
+    }
+    &__empty{
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 23px;
+    }
+
+}
+.search-input{
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--text);
+
+    &::placeholder{
+        font-size: 30px;
+        font-weight: 400;
+        color: var(--text-opacity);
+    }
+}
+// Анимации 
+.check-active{
+    background-color: var(--bg-check-active);
+}
+.item-active{
+    background-color: var(--bg-item-active);
+}
+.film-active{
+    text-decoration-line: line-through;
+    color: var(--text-opacity);
+}

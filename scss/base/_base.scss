@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+html,body{
+    background-color: var(--bg-app);
+    font-family: var(--font-family);
+    min-height:  100vh;
+    color: var(--text);;
+     
+}
+.container{
+    max-width: 990px;
+    padding: 30px 30px;
+    margin: 0 auto;
+}
+.none{
+    display: none !important;
+}
+.tegs-layout{
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 200px;
+    background-color: var(--bg-tegs);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
+    &:hover{
+        background-color: rgb(75, 43, 173);
+    }
+
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+    <section class="movie">
+        <div class="container movie__inner">
+            <div class="movie__top">
+                <div class="movie__tegs">
+                    <span class="movie__tegs-film tegs-layout">список фильмов</span>
+                    <span class="movie__tegs-year tegs-layout">2024</span>
+                </div>
+                <h1 class="movie__title">Посмотреть</h1>
+            </div>
+            <div class="movie__content">
+                <form class="movie__search">
+                    <div class="movie__search-input">
+                        <input id="search-input" class="search-input" type="text" placeholder="Добавить фильм" required>
+                    </div>
+                    <button type="submit" id="search-button" class="movie__search-button">
+                        <img src="./icons/search.svg" alt="">
+                    </button>
+                </form>
+                <ul id="movie-list" class="movie__list">
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
